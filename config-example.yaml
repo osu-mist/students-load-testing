@@ -1,0 +1,11 @@
+api_base_url: '/v1/students'
+user: 'username'
+password: 'password'
+multiple_courses: ['123456789']
+multiple_majors: ['123456789']
+balance_due: ['123456789']
+student_employee: ['123456789']
+with_holds: ['123456789']
+financial_aid: ['123456789']
+bend_campus: ['123456789']
+international: ['123456789']
