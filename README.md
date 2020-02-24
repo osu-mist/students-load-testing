@@ -33,7 +33,7 @@ The purpose of this repo is to execute [Students API](https://github.com/osu-mis
 
 The following report is generated with different amount of users and mounting rates within 10 minutes.
 
-| # of Connection Pools | # of Users | Hatch Rate (users spawned/sec) | # of Requests | # of Fails | Failure Rate | Average (ms) | 90%ile (ms) | Max (ms) | PRS |
+| # of Connection Pools | # of Users | Hatch Rate (users spawned/sec) | # of Requests | # of Fails | Failure Rate | Average (ms) | 90%ile (ms) | Max (ms) | RPS |
 | ---------------- | ---------- | ------------------------------ | ------------- | ---------- | ------------ | ------------ | ----------- | -------- |---- |
 | 4 | 500 | 10 | 109204 | 22 | 0% | 50 | 69 | 2109 | 189.3 |
 | 4 | 500 | 50 | 120024 | 59 | 0% | 66 | 74 | 4703 | 192.2 |
