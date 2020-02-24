@@ -33,7 +33,7 @@ The purpose of this repo is to execute [Students API](https://github.com/osu-mis
 
 The following report is generated with different amount of users and mounting rates within 10 minutes.
 
-| Connection Pools | # of Users | Hatch Rate (users spawned/sec) | # of Requests | # of Fails | Failure Rate | Average (ms) | 90%ile (ms) | Max (ms) | PRS |
+| # of Connection Pools | # of Users | Hatch Rate (users spawned/sec) | # of Requests | # of Fails | Failure Rate | Average (ms) | 90%ile (ms) | Max (ms) | PRS |
 | ---------------- | ---------- | ------------------------------ | ------------- | ---------- | ------------ | ------------ | ----------- | -------- |---- |
 | 4 | 500 | 10 | 109204 | 22 | 0% | 50 | 69 | 2109 | 189.3 |
 | 4 | 500 | 50 | 120024 | 59 | 0% | 66 | 74 | 4703 | 192.2 |
@@ -46,4 +46,4 @@ The following report is generated with different amount of users and mounting ra
 | 20 | 1000 | 100 | 234865 | 375 | 0% | 111 | 340 | 6282 | 380.6 |
 
 
-From the report, the average response times are pretty constant under all scenarios. Although the max response time can exceed 4-7 seconds sometimes, they are still very rare cases among all of the requests. Average response time and the ninetieth percentile response time were pretty fast for each test cases. Also, looks like 4 connection pools (default number for the API) should be enough for each load balancer; adding more connection pools won't cause a huge difference. There were a very few failure requests as well, but all of them are `ConnectionError` due to too many users at a time, and I think it's expected and acceptable for this amount of RPS.
+From the report, the average response times are pretty consistent under all scenarios. Although the max response time can exceed 4-7 seconds sometimes, they are still very rare cases among all of the requests. Average response time and the ninetieth percentile response time were pretty fast for each test cases. Also, looks like 4 connection pools (default number for the API) should be enough for each load balancer; adding more connection pools won't cause a huge difference. There were a very few failure requests as well, but all of them are `ConnectionError` due to too many users at a time, and I think it's expected and acceptable for this amount of RPS.
